@@ -49,7 +49,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=metaplus
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Performs meta-analysis and meta-regression using standard and robust methods with
     confidence intervals based on the profile likelihood. Robust methods are based on
     alternative distributions for the random effect, either the t-distribution (Lee
