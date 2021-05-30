@@ -32,6 +32,10 @@ requirements:
     - r-lme4
     - r-metafor
     - r-numderiv
+    - r-rfast
+    - r-doparallel
+    - r-foreach
+    - r-dorng
   run:
     - r-base
     - r-mass
@@ -41,6 +45,10 @@ requirements:
     - r-lme4
     - r-metafor
     - r-numderiv
+    - r-rfast
+    - r-doparallel
+    - r-foreach
+    - r-dorng
 
 test:
   commands:
