@@ -1,4 +1,4 @@
-{% set version = '0.7-11' %}
+{% set version = "1.0-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/metaplus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/metaplus/metaplus_{{ version }}.tar.gz
-  sha256: c7aae491bb81bfc80e829b3383111b98e3df6bfadd0bde764d7860fa017ff316
+  sha256: 695ff60428a9c0b9d33521123e11122874f48b7d7f5b2b223f9d55826e6cc65c
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -32,6 +32,10 @@ requirements:
     - r-lme4
     - r-metafor
     - r-numderiv
+    - r-rfast
+    - r-doparallel
+    - r-foreach
+    - r-dorng
   run:
     - r-base
     - r-mass
@@ -41,6 +45,10 @@ requirements:
     - r-lme4
     - r-metafor
     - r-numderiv
+    - r-rfast
+    - r-doparallel
+    - r-foreach
+    - r-dorng
 
 test:
   commands:
@@ -50,14 +58,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=metaplus
   license: GPL-2.0-or-later
-  summary: Performs meta-analysis and meta-regression using standard and robust methods with
-    confidence intervals based on the profile likelihood. Robust methods are based on
-    alternative distributions for the random effect, either the t-distribution (Lee
-    and Thompson, 2008 <doi:10.1002/sim.2897> or Baker and Jackson, 2008 <doi:10.1007/s10729-007-9041-8>)
-    or mixtures of normals (Beath, 2014 <doi:10.1002/jrsm.1114>).
+  summary: Performs meta-analysis and meta-regression using standard and robust methods with confidence intervals based on the profile likelihood. Robust methods are based on alternative distributions for the random effect, either the t-distribution (Lee and Thompson, 2008 <doi:10.1002/sim.2897> or Baker and Jackson, 2008
+    <doi:10.1007/s10729-007-9041-8>) or mixtures of normals (Beath, 2014 <doi:10.1002/jrsm.1114>).
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
