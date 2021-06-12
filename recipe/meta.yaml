@@ -1,4 +1,4 @@
-{% set version = "1.0-1" %}
+{% set version = "1.0-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/metaplus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/metaplus/metaplus_{{ version }}.tar.gz
-  sha256: 695ff60428a9c0b9d33521123e11122874f48b7d7f5b2b223f9d55826e6cc65c
+  sha256: e8b22b7b8b637e5a1d9a5b1806a72101537b5f7ebf2bbe565aeca9915ae2eeb9
 
 build:
   merge_build_host: true  # [win]
