@@ -1,11 +1,11 @@
-About r-metaplus
-================
+About r-metaplus-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-metaplus-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=metaplus
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-metaplus-feedstock/blob/main/LICENSE.txt)
 
 Summary: Performs meta-analysis and meta-regression using standard and robust methods with confidence intervals based on the profile likelihood. Robust methods are based on alternative distributions for the random effect, either the t-distribution (Lee and Thompson, 2008 <doi:10.1002/sim.2897> or Baker and Jackson, 2008 <doi:10.1007/s10729-007-9041-8>) or mixtures of normals (Beath, 2014 <doi:10.1002/jrsm.1114>).
 
