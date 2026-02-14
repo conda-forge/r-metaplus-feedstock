@@ -1,4 +1,4 @@
-{% set version = "1.0-6" %}
+{% set version = "1.0-8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/metaplus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/metaplus/metaplus_{{ version }}.tar.gz
-  sha256: b14bcec2959117155b6ca73c9c1b80f371d836667d5f03d6e497909c888aca26
+  sha256: 6b5b74f325c7dcd8510ed5b5777a92b7dcbedd20bf9d610a1a97407067043617
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -56,8 +56,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=metaplus
   license: GPL-2.0-or-later
-  summary: Performs meta-analysis and meta-regression using standard and robust methods with confidence intervals based on the profile likelihood. Robust methods are based on alternative distributions for the random effect, either the t-distribution (Lee and Thompson, 2008 <doi:10.1002/sim.2897> or Baker and Jackson, 2008
-    <doi:10.1007/s10729-007-9041-8>) or mixtures of normals (Beath, 2014 <doi:10.1002/jrsm.1114>).
+  summary: Performs meta-analysis and meta-regression using standard and robust methods with confidence intervals based on the profile likelihood. Robust methods are based on alternative distributions for the random effect, either the t-distribution (Lee and Thompson, 2008 <doi:10.1002/sim.2897> or Baker and Jackson, 
+    2008 <doi:10.1007/s10729-007-9041-8>) or mixtures of normals (Beath, 2014 <doi:10.1002/jrsm.1114>).
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
